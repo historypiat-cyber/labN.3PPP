@@ -3,12 +3,11 @@ b_vec = linspace(-pi/2, pi/2, 50);  % бета від -pi/2 до pi/2
 
 [alpha, beta] = meshgrid(a_vec, b_vec);
 
-% Розраховуємо матриці координат X, Y, Z за формулами з таблиці
 X = cos(alpha) .* cos(beta);
 Y = sin(alpha) .* cos(beta);
 Z = sin(beta);
 
-% 4. Будуємо поверхню
+% Будуємо поверхню
 figure;
 mesh(X, Y, Z); % Малює "сітчасту" поверхню
 
